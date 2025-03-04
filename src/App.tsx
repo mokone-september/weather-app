@@ -7,7 +7,7 @@ function App() {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [error, setError] = useState<string>('');
 
-  const API_KEY = 'bbcf748eb48df8aa4e4b931c04f0d440'; // Replace with your OpenWeatherMap API key
+  const API_KEY = import.meta.env.VITE_API_KEY;
   const API_URL = `https://api.openweathermap.org/data/2.5/weather`;
 
   const fetchWeather = async () => {
