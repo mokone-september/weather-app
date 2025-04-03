@@ -2,7 +2,7 @@
 
 ## 1. Performance Considerations
 
-## To ensure optimal performance, the following best practices are followed in this project
+  *To ensure optimal performance, the following best practices are followed in this project:*
 
 ## Efficient Rendering (Frontend)
 
@@ -42,9 +42,9 @@
 
 - Use server-side rendering (SSR) or static site generation (SSG) where appropriate.
 
-## Optimize JavaScript execution with web workers for heavy computations
+- Optimize JavaScript execution with web workers for heavy computations
 
-- Monitoring & Logging
+## Monitoring & Logging
 
 - Use application performance monitoring (APM) tools like Sentry, Datadog, or Prometheus.
 
@@ -54,7 +54,7 @@
 
 ## 2. Scalability Strategies
 
-## To ensure the system can handle increasing traffic and workload efficiently
+   *To ensure the system can handle increasing traffic and workload efficiently:*
 
 ## Backend Scaling
 
@@ -90,7 +90,7 @@
 
 ## 3. Security Best Practices
 
- To protect user data and prevent vulnerabilities:
+   *To protect user data and prevent vulnerabilities:*
 
 ## Authentication & Authorization
 
