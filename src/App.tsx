@@ -55,6 +55,8 @@ function App() {
           <p>Wind Speed: {weather.wind.speed} m/s</p>
         </div>
       )}
+      <h2>Test</h2>
+      <p>Temperature: </p> <i className='wi-celsius'>20</i>
     </div>
   );
 }
