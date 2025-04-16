@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { ReactComponent as LocationIconSvg } from '../../assets/location-icon.svg';
-import { ReactComponent as SearchIconSvg } from '../../assets/search-icon.svg';
+import { ReactComponent as LocationIconSvg } from '../../assets/location-icon.svg?react';
+import { ReactComponent as SearchIconSvg } from '../../assets/search-icon.svg?react';
 
 export const SearchElement = styled.div`
   position: relative;

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { createSlice } from '@reduxjs/toolkit';
 import { ExtendedForecastData, WeatherData } from '../../api/types';
 import { fetchWeather, transformWeatherData } from '../fetchWeather';

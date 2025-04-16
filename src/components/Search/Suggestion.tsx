@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchWeather } from '../../store/fetchWeather';

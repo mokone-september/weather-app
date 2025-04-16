@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { ReactComponent as HighIcon } from '../../assets/high-icon.svg';
-import { ReactComponent as HumidityIcon } from '../../assets/humidity-icon.svg';
-import { ReactComponent as LowIcon } from '../../assets/low-icon.svg';
-import { ReactComponent as PressureIcon } from '../../assets/pressure-icon.svg';
-import { ReactComponent as WindIcon } from '../../assets/wind-icon.svg';
+import { ReactComponent as HighIcon } from '../../assets/high-icon.svg?react';
+import { ReactComponent as HumidityIcon } from '../../assets/humidity-icon.svg?react';
+import { ReactComponent as LowIcon } from '../../assets/low-icon.svg?react';
+import { ReactComponent as PressureIcon } from '../../assets/pressure-icon.svg?react';
+import { ReactComponent as WindIcon } from '../../assets/wind-icon.svg?react';
 import { AppStore } from '../../store/store';
 import { changeTempUnit } from '../../store/reducers/appReducer';
 import { kmToMile, TempUnit } from '../../utils/unitConversion';

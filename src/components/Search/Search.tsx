@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useRef, useState } from 'react';
 import { DebounceInput } from 'react-debounce-input';
 import { useDispatch } from 'react-redux';

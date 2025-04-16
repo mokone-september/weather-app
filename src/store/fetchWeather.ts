@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { ExtendedForecastData, WeatherData } from '../api/types';
 import { fetchExtendedForecastData, fetchWeatherData } from '../api/weather';

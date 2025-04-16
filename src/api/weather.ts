@@ -1,20 +1,36 @@
 const baseUrl = 'https://api.openweathermap.org/data/2.5';
+const apiKey = import.meta.env.VITE_WEATHER_API_KEY; // <-- use Vite-style env var
 
-export const fetchWeatherData = async (city: string | { lat: number; lng: number }) => {
-  let url = `${baseUrl}/weather?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
+type CityInput = string | { lat: number; lng: number };
 
-  if (typeof city === 'object') {
-    url = `${baseUrl}/weather?lat=${city.lat}&lon=${city.lng}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
+export const fetchWeatherData = async (city: CityInput) => {
+  const params = new URLSearchParams();
+
+  if (typeof city === 'string') {
+    params.append('q', city);
+  } else {
+    params.append('lat', city.lat.toString());
+    params.append('lon', city.lng.toString());
   }
-  return await (await fetch(url)).json();
+
+  params.append('appid', apiKey);
+
+  const response = await fetch(`${baseUrl}/weather?${params}`);
+  return response.json();
 };
 
-export const fetchExtendedForecastData = async (city: string | { lat: number; lng: number }) => {
-  let url = `${baseUrl}/forecast/daily?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
+export const fetchExtendedForecastData = async (city: CityInput) => {
+  const params = new URLSearchParams();
 
-  if (typeof city === 'object') {
-    url = `${baseUrl}/forecast/daily?lat=${city.lat}&lon=${city.lng}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
+  if (typeof city === 'string') {
+    params.append('q', city);
+  } else {
+    params.append('lat', city.lat.toString());
+    params.append('lon', city.lng.toString());
   }
 
-  return await (await fetch(url)).json();
+  params.append('appid', apiKey);
+
+  const response = await fetch(`${baseUrl}/forecast?${params}`);
+  return response.json();
 };

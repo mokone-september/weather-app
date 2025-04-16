@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as GithubIcon } from '../../assets/github.svg';
+import { ReactComponent as GithubIcon } from '../../assets/github.svg?react';
 import { GithubLink, HeaderContainer, Title, HeaderIconsContainer } from './styed';
 import { useDispatch, useSelector } from 'react-redux';
 import DarkModeToggle from 'react-dark-mode-toggle';

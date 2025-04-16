@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
 import { useEffect } from 'react';
 
 export const useClickOutside = (element: any, callback: Function) => {
